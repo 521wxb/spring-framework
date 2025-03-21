@@ -22,7 +22,7 @@ configure(allprojects) { project ->
 	repositories {
 		mavenCentral()
 		if (version.contains('-')) {
-			maven { url = "https://repo.spring.io/milestone" }
+			maven { url = "https://maven.aliyun.com/nexus/content/groups/public" }
 		}
 		if (version.endsWith('-SNAPSHOT')) {
 			maven { url = "https://repo.spring.io/snapshot" }
